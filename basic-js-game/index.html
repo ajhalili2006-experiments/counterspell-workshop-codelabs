@@ -1,0 +1,46 @@
+<!--
+  You are looking at the JavaScript side of the workshop.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Counterspell Workshop Lab - Simple JS Game</title>
+    <meta charset="en-US">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <p>TODO: Simple JavaScript game here</p>
+    <canvas id="canvas" height="600" width="1200"></canvas>
+    <style>
+    canvas {
+      border: 2px solid black;
+      display: block;
+      margin: 0 auto
+    }
+    </style>
+    
+    <script>
+      // initialize the thing
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d")
+
+      // game vars
+      var player = {
+        x: 50,
+        y: 50,
+        size: 20,
+        speed: 10
+      }
+
+      function gameLoopOps() {
+       ctx.fillRect(0,0, canvas.width, canvas.height);
+
+       ctx.fillStyle = "red";
+       ctx.fillRect(player.x, player.y, player.size, player.size)
+      }
+
+      gameLoopOps()
+    </script>
+  </body>
+</html>
