@@ -1,0 +1,8 @@
+{
+  "conventionalCommits.scopes": [
+    "basic-js-game",
+    "global",
+    "vscode"
+  ],
+  "git.alwaysSignOff": true
+}
